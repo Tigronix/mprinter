@@ -1,0 +1,130 @@
+.page-header {
+  margin-bottom: 13px;
+
+  &__top {
+    background: #df1c1c;
+    height: 30px;
+    box-shadow: 2px 0 8px 0 rgba(#000, .97);
+    position: relative;
+    z-index: 5;
+
+    @include atMobile{
+      height: auto;
+      padding: 10px 0;
+    }
+  }
+
+  &__top-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 100%;
+  }
+
+  &__bot {
+    height: 110px;
+    background: #f5f7f9;
+    box-shadow: 2px 0 8px 0 rgba(#000, .97);
+    position: relative;
+    z-index: 2;
+
+    @include atMobile{
+      height: auto;
+      padding: 10px 0;
+    }
+  }
+
+  &__bot-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+
+    @include atMobile{
+      display: block;
+    }
+  }
+
+  &__link {
+    font-size: 14px;
+    color: #4040db;
+    text-transform: none;
+    text-decoration: none;
+
+    &:hover {
+      @include fromDesktop {
+        text-decoration: underline;
+      }
+    }
+
+    &:after,
+    &:before {
+      display: inline;
+      color: #000;
+    }
+
+    &:before {
+      content: '(';
+    }
+
+    &:after {
+      content: ')';
+    }
+  }
+
+  &__location {
+    position: relative;
+    padding-left: 40px;
+    width: 260px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+
+  &__location-icon {
+    font-size: 40px;
+    color: #000;
+    position: absolute;
+    left: 0;
+    top: 5px;
+  }
+
+  &__location-title {
+    font-size: 24px;
+    color: #000;
+    text-transform: uppercase;
+  }
+
+  &__address {
+    font-size: 16px;
+    color: #000;
+  }
+
+  &__contact {
+    width: 160px;
+    margin: 0 auto;
+  }
+
+  &__email,
+  &__phone {
+    font-size: 18px;
+    color: #000;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+
+  &__contact-link {
+    display: block;
+  }
+
+  &__logo {
+    transform: translateX(-50px);
+    margin: 0 auto;
+    margin-bottom: 20px;
+
+    @include atMobile{
+      transform: translateX(0);
+    }
+  }
+}

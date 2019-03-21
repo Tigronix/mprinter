@@ -1,3 +1,9 @@
+@mixin fromDesktop {
+  @media (min-width:1024px) {
+    @content
+  }
+};
+
 @mixin fromVerticalTablet {
   @media (max-width:768px) {
     @content
