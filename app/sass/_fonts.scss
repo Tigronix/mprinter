@@ -1,0 +1,11 @@
+@mixin Calibri {
+  font-family: 'Calibri', sans-serif;
+}
+
+@font-face {
+    font-family: 'Calibri';
+    src: url('Calibri.woff2') format('woff2'),
+        url('Calibri.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}

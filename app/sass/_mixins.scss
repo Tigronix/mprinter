@@ -1,0 +1,11 @@
+@mixin fromVerticalTablet {
+  @media (max-width:768px) {
+    @content
+  }
+};
+
+@mixin atMobile {
+  @media (max-width:767px) {
+    @content
+  }
+};
