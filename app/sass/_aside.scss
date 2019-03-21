@@ -1,0 +1,49 @@
+.aside {
+  width: 260px;
+
+  &__item {
+    margin-top: 18px;
+    border-radius: 14px 0 14px 0;
+    border: 1px solid #585858;
+    padding-bottom: 11px;
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
+  &__title {
+    font-size: 20px;
+    color: #fff;
+    padding-left: 10px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    background: #585858;
+    margin-bottom: 12px;
+    border-radius: 12px 0 0 0;
+  }
+
+  &__list {
+    margin: -8px 0;
+    padding-left: 10px;
+  }
+
+  &__list-item {
+    padding: 8px 0;
+  }
+
+  &__list-link {
+    font-size: 14px;
+    color: #000;
+    text-decoration: none;
+    display: inline-block;
+    transition: color .2s;
+
+    &:hover {
+      @include fromDesktop {
+        color: #f25146;
+      }
+    }
+  }
+}
