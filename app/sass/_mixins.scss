@@ -1,11 +1,11 @@
 @mixin fromDesktop {
-  @media (min-width:1024px) {
+  @media (min-width: 1158px) {
     @content
   }
 };
 
-@mixin fromVerticalTablet {
-  @media (max-width:768px) {
+@mixin lessVerticalTablet {
+  @media (max-width:1157px) {
     @content
   }
 };

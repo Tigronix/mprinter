@@ -1,6 +1,11 @@
 .aside {
   width: 260px;
 
+  @include lessVerticalTablet {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
   &__item {
     margin-top: 18px;
     border-radius: 14px 0 14px 0;

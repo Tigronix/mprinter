@@ -1,0 +1,41 @@
+.main-slider {
+  margin-bottom: 30px;
+  
+  &__item {
+    border: 1px solid #585858;
+    height: 263px;
+    background: no-repeat center;
+    background-size: cover;
+  }
+
+  .slick {
+    &-dots {
+      margin: 0 -3px;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: 7px;
+      font-size: 0;
+
+      button {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: #8f8f8f;
+        transition: background .2s;
+        font-size: 0;
+      }
+
+      li {
+        display: inline-block;
+        margin: 0 3px;
+
+        &.slick-active {
+          button {
+            background: #d55257;
+          }
+        }
+      }
+    }
+  }
+}
