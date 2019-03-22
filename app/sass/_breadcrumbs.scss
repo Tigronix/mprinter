@@ -1,0 +1,48 @@
+.breadcrumbs {
+  margin-bottom: 20px;
+
+  &__list {
+    font-size: 0;
+    margin: -11px;
+  }
+
+  &__li {
+    padding: 11px;
+    display: inline-block;
+
+    &:last-child {
+      color: #424141;
+
+      .breadcrumbs__link {
+        color: #424141;
+
+        &:after {
+          display: none;
+        }
+      }
+    }
+  }
+
+  &__link {
+    font-size: 14px;
+    color: #888686;
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+
+    @include fromDesktop {
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    &:after {
+      display: inline-block;
+      content: '>';
+      font-size: 14px;
+      position: absolute;
+      left: 100%;
+      transform: translateX(82%);
+    }
+  }
+}
