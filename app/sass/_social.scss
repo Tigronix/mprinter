@@ -1,0 +1,38 @@
+.social {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: -9px;
+
+  @include atMobile{
+    justify-content: center;
+  }
+
+  &__item {
+    padding: 9px;
+  }
+
+  &__link {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:hover {
+      @include fromDesktop {
+        .social__icon {
+          color: #DF1C1C;
+        }
+      }
+    }
+  }
+
+  &__icon {
+    font-size: 26px;
+    color: #585858;
+    transition: color .3s;
+  }
+}

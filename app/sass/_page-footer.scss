@@ -1,0 +1,43 @@
+.page-footer {
+  background: #585858;
+  padding: 13px 0 6px;
+
+  &__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    @include atMobile {
+      display: block;
+    }
+  }
+
+  &__title {
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 10px;
+  }
+
+  &__item {
+    @include atMobile{
+      margin-bottom: 25px;
+    };
+  }
+
+  &__list-item {
+    margin-bottom: 18px;
+  }
+
+  &__link {
+    font-size: 13px;
+    color: #fff;
+    transition: color .3s;
+
+    &:hover {
+      @include fromDesktop {
+        color: #DF1C1C;
+      }
+    }
+  }
+}
