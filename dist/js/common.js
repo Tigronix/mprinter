@@ -17,7 +17,18 @@ MP.svgGlobal = function(){
     })
 };
 
+MP.mainSlider = function(){
+  const $slider = $('.js-main-slider');
+
+  $slider.slick({
+    dots: true,
+    slidesToShow: 1,
+    arrows: false,
+    infinite: false
+  });
+};
 
 (function onPageReady () {
   MP.svgGlobal();
+  MP.mainSlider();
 }());
