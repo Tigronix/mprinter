@@ -1,11 +1,15 @@
 .main-slider {
   margin-bottom: 30px;
-  
+
   &__item {
     border: 1px solid #585858;
-    height: 263px;
     background: no-repeat center;
     background-size: cover;
+  }
+
+  &__img {
+    width: 100%;
+    height: auto;
   }
 
   .slick {

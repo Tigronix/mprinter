@@ -2,19 +2,39 @@
   width: 260px;
 
   @include lessVerticalTablet {
+    width: 200px;
+  }
+
+  @include atMobile {
     width: 100%;
     margin-bottom: 30px;
   }
 
+  &__item-list {
+    margin: -10px;
+
+    @include atMobile{
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+
+  &__li {
+    padding: 10px;
+
+    @include atMobile{
+      width: 100%;
+    }
+
+    @include atMedMobile {
+      width: 50%;
+    }
+  }
+
   &__item {
-    margin-top: 18px;
     border-radius: 14px 0 14px 0;
     border: 1px solid #585858;
     padding-bottom: 11px;
-
-    &:first-child {
-      margin-top: 0;
-    }
   }
 
   &__title {
@@ -31,7 +51,7 @@
 
   &__list {
     margin: -8px 0;
-    padding-left: 10px;
+    padding: 0 10px;
   }
 
   &__list-item {

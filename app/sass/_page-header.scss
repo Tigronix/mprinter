@@ -41,10 +41,6 @@
     justify-content: space-between;
     align-items: center;
     height: 100%;
-
-    @include atMobile{
-      display: block;
-    }
   }
 
   &__link {
@@ -72,21 +68,28 @@
     &:after {
       content: ')';
     }
+
+    @include atMobile{
+      font-size: 12px;
+    }
   }
 
   &__location {
     position: relative;
-    padding-left: 40px;
+    padding-left: 33px;
     width: 260px;
-    margin: 0 auto;
-    margin-bottom: 20px;
+
+    @include atMobile{
+      margin-bottom: 20px;
+      display: none;
+    }
   }
 
   &__location-icon {
     font-size: 40px;
     color: #000;
     position: absolute;
-    left: 0;
+    left: -7px;
     top: 5px;
   }
 
@@ -103,7 +106,11 @@
 
   &__contact {
     width: 160px;
-    margin: 0 auto;
+
+    @include atMobile {
+      margin: 0;
+      width: auto;
+    }
   }
 
   &__email,
@@ -112,6 +119,11 @@
     color: #000;
     text-decoration: none;
     text-transform: uppercase;
+    display: block;
+
+    @include atMobile {
+      font-size: 14px;
+    }
   }
 
   &__contact-link {
@@ -120,11 +132,10 @@
 
   &__logo {
     transform: translateX(-50px);
-    margin: 0 auto;
-    margin-bottom: 20px;
 
     @include atMobile{
       transform: translateX(0);
+      margin: 0;
     }
   }
 }
